@@ -1,0 +1,124 @@
+ISC 2024 Computer Science 2024 Boards Paper Answer Key
+
+Q1) 
+	i) (b) (A•B') + (A•0) = A•B'
+
+	ii) OR
+
+	iii) X + X = X
+
+	iv)
+	For the proposition P->Q,  the proposition Q->P is called its converse,  and the proposition -Q -> -P is called its contrapositive.
+	Inverse is -P->-Q
+
+	P->Q, inverse is -P->-Q, converse -Q -> -P 
+	(d) Assertion is false and reason is true 
+
+	v) b) (P + Q')•(R' + S)
+
+	vi) (c) Assertion is true and reason is false 
+
+	vii) 
+	- Interfaces are used in Java to achieve abstraction,
+	- to achieve multiple inheritance
+
+	viii) M2
+
+	ix) A'•B' + A•B (XNOR equivalent, that is either both or neither)
+
+	x) instance variable - a separate copy for each of the objects of the class
+	class variable - same copy of the variable is shared amongst all objects of the class
+
+Q2)
+	i) P Q R * + S - T / U *
+
+	ii) 2840 
+
+	iii) 
+	a) 7
+	b) Find the maximum value in the array x 
+
+	iv)
+	a) n%10
+	b) n (just put n, question is wrong and the statement should be n%10 instead of n*10)
+	c) min
+
+Q3)
+i) 
+X = P(B + E) + SE + PS'E
+
+P	S	E	B	S’	PB	SE	PE	PS’E	X	
+0	0	0	0	1	0	0	0	0		0	0
+0	0	0	1	1	0	0	0	0		0	1
+0	0	1	0	1	0	0	0	0		0	2
+0	0	1	1	1	0	0	0	0		0	3
+0	1	0	0	0	0	0	0	0		0	4
+0	1	0	1	0	0	0	0	0		0	5
+0	1	1	0	0	0	1	0	0		1	6 	P'SEB
+0	1	1	1	0	0	1	0	0		1	7	P'SEB
+1	0	0	0	1	0	0	0	0		0	8
+1	0	0	1	1	1	0	0	0		1	9	PS'E'B
+1	0	1	0	1	0	0	1	1		1	10	PS'EB'
+1	0	1	1	1	1	0	1	1		1	11	PS'EB
+1	1	0	0	0	0	0	0	0		0	12
+1	1	0	1	0	1	0	0	0		1	13	PSE'B
+1	1	1	0	0	0	1	1	0		1	14	PSEB'
+1	1	1	1	0	1	1	1	0		1	15	PSEB 
+
+SOP: P'SEB' + P'SEB + PS'E'B + PS'EB' + PS'EB + PSE'B + PSEB' + PSEB 
+
+ii) 
+K-map:
+
+Quad(6,7,14,15) = SE
+Quad(10,11,15,14) = PE
+Quad(9,11,13,15) = PB
+
+Reduced expression: X = SE + PE + PB
+
+Q4) 
+i)
+Quad(2,6,10,14) = C'+ D
+Quad(0,2,4,6) = A + D
+Quad(8,9,10,11) = A'+B
+
+a) (A+D)(C'+D)(A'+B)
+b) 
+
+ii) 
+
+A	B	C	A->B 	B->C   (A->B)^(B->C) 	A->C	((A->B)^(B->C)) -> (A->C)
+T	T	T	T		T		T				 T		T
+T	T	F	T		F		F				 F		T
+T	F	T	F		T		F				 T		T
+T	F	F	F		T		F				 F		T
+F	T	T	T		T		T				 T		T
+F	T	F	T		F		F				 T		T
+F	F	T	T		T		T				 T		T
+F	F	F	T		T		T				 T		T
+
+Tautology, because all rows are true 
+
+iii) 
+[P•(P+Q)•Q•(Q+R')]'
+= [P•(P+Q)]' + [Q•(Q+R')]'	        since, (A.B)' = A' + B'
+= [P' + (P+Q)'] + [Q' + (Q+R')']    
+= P' + P'•Q' + Q' + (Q')•(R')' 		since, (A + B)' = A'.B'
+= P' + P'•Q' + Q' + Q'•R
+= P'(1 + Q') + Q'(1 + R)
+= P' + Q' 
+
+
+Ans: P' + Q' 
+
+Q5)
+i) The major difference between multiplexer and decoder is in their function that is the primary function of a multiplexer is to transmit data while the primary function of a decoder is to interpret a coded data
+
+ii) 
+
+iii) 
+m3 = A'B'CD
+M5 = (A + B' + C + D')
+
+
+
